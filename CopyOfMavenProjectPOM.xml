@@ -21,25 +21,13 @@
     <module>webapp</module>
   </modules>
 
-<DistributionManagement>
-  <repository>
-    <id>release</id>
-    <name>releases</name>
-    <url>http://localhost:8081/artifactory/libs-release-local</url>
-  </repository>
-  <snapshotRepository>
-    <id>snapshots</id>
-    <name>snapshots</name>
-    <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
-  </snapshotRepository>
-</distributionManagement>
-
-<scm>
-  <connection>scm:git:git@github.com:atraghu1909/maven-project.git</connection>
-  <developerConnection>scm:git:git@github.com:atraghu1909/maven-project.git</developerConnection>
-  <url>git@github.com:atraghu1909/maven-project.git</url>
-  <tag>HEAD</tag>
-</scm>
+  <distributionManagement>
+    <site>
+      <id>site-server</id>
+      <name>Test Project Site</name>
+      <url>file:///tmp/maven-project-site</url>
+    </site>
+  </distributionManagement>
 
   <build>
     <plugins>
